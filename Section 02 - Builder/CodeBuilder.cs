@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Section02Builder
 {
@@ -11,7 +8,7 @@ namespace Section02Builder
         private string _className;
         private List<string> _fieldName = new List<string>();
         private List<string> _fieldType = new List<string>();
-        
+
         public CodeBuilder(string className)
         {
             this._className = className;
@@ -30,7 +27,7 @@ namespace Section02Builder
             builder.AppendLine($"public class {_className}");
             builder.AppendLine("{");
 
-            for(int i = 0; i < _fieldName.Count; i++) 
+            for (int i = 0; i < _fieldName.Count; i++)
             {
                 builder.AppendLine($"  public {_fieldType[i]} {_fieldName[i]};");
             }

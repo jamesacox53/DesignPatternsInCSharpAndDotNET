@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Section04Prototype
+﻿namespace Section04Prototype
 {
     public class Exercise
     {
@@ -28,8 +22,8 @@ namespace Section04Prototype
             public Line DeepCopy()
             {
                 Line newLine = new Line();
-            
-                Point newStart = Start.DeepCopy();   
+
+                Point newStart = Start.DeepCopy();
                 newLine.Start = newStart;
 
                 Point newEnd = End.DeepCopy();
