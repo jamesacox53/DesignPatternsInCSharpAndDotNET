@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Section09Decorator
+﻿namespace Section09Decorator
 {
     public class Bird
     {
@@ -35,7 +29,7 @@ namespace Section09Decorator
         public int Age
         {
             get { return age; }
-            set 
+            set
             {
                 age = value;
                 bird.Age = age;

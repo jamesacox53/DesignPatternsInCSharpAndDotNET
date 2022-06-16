@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
 namespace Section08Composite
 {
     public interface IValueContainer : IEnumerable<int>
-    { 
+    {
     }
 
     public class SingleValue : IValueContainer

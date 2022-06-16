@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Section07Bridge
+﻿namespace Section07Bridge
 {
     public interface IRenderer
     {
@@ -29,7 +27,7 @@ namespace Section07Bridge
         public Triangle(IRenderer renderer) : base(renderer)
         {
             this.Name = "Triangle";
-        } 
+        }
     }
 
     public class Square : Shape
@@ -37,14 +35,14 @@ namespace Section07Bridge
         public Square(IRenderer renderer) : base(renderer)
         {
             this.Name = "Square";
-        } 
+        }
     }
 
     public class VectorRenderer : IRenderer
     {
-        string IRenderer.WhatToRenderAs 
+        string IRenderer.WhatToRenderAs
         {
-            get 
+            get
             {
                 return "lines";
             }

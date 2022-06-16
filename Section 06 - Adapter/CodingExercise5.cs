@@ -8,7 +8,7 @@ namespace Section06Adapter
         {
             Square square = new Square();
             square.Side = 3;
-            
+
             IRectangle adapter = new SquareToRectangleAdapter(square);
 
             Console.WriteLine("Area: " + adapter.Area());
