@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section 14 - Command", "Sec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section 15 - Interpreter", "Section 15 - Interpreter\Section 15 - Interpreter.csproj", "{17BFCA6E-51DF-45B3-9849-9628558523A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section 16 - Iterator", "Section 16 - Iterator\Section 16 - Iterator.csproj", "{B4BD65C8-9CAA-4851-9A55-1E16471C6003}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{17BFCA6E-51DF-45B3-9849-9628558523A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17BFCA6E-51DF-45B3-9849-9628558523A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17BFCA6E-51DF-45B3-9849-9628558523A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BD65C8-9CAA-4851-9A55-1E16471C6003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BD65C8-9CAA-4851-9A55-1E16471C6003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BD65C8-9CAA-4851-9A55-1E16471C6003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BD65C8-9CAA-4851-9A55-1E16471C6003}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
