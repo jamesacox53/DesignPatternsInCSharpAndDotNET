@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section 15 - Interpreter", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section 16 - Iterator", "Section 16 - Iterator\Section 16 - Iterator.csproj", "{B4BD65C8-9CAA-4851-9A55-1E16471C6003}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section 17 - Mediator", "Section 17 - Mediator\Section 17 - Mediator.csproj", "{12A9F7F5-EA6D-4812-A285-342CCCB027CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section 18 - Memento", "Section 18 - Memento\Section 18 - Memento.csproj", "{9D39FB0D-C7C4-4AD1-9024-6BD0055AFD7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{B4BD65C8-9CAA-4851-9A55-1E16471C6003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4BD65C8-9CAA-4851-9A55-1E16471C6003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4BD65C8-9CAA-4851-9A55-1E16471C6003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A9F7F5-EA6D-4812-A285-342CCCB027CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A9F7F5-EA6D-4812-A285-342CCCB027CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A9F7F5-EA6D-4812-A285-342CCCB027CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A9F7F5-EA6D-4812-A285-342CCCB027CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D39FB0D-C7C4-4AD1-9024-6BD0055AFD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D39FB0D-C7C4-4AD1-9024-6BD0055AFD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D39FB0D-C7C4-4AD1-9024-6BD0055AFD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D39FB0D-C7C4-4AD1-9024-6BD0055AFD7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

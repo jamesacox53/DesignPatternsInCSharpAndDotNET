@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Section14Command
+﻿namespace Section14Command
 {
     public class Command
     {
@@ -40,9 +34,9 @@ namespace Section14Command
         private bool Deposit(int amount)
         {
             if (amount < 0) return false;
-            
+
             Balance += amount;
-            
+
             return true;
         }
 

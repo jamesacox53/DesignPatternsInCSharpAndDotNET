@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Section12Proxy
+﻿namespace Section12Proxy
 {
     public class Person
     {
@@ -34,12 +28,12 @@ namespace Section12Proxy
             this.person = person;
         }
 
-        public int Age 
+        public int Age
         {
             set
             {
                 person.Age = value;
-            } 
+            }
             get
             {
                 return person.Age;

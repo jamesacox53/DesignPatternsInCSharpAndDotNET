@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Section15Interpreter
 {
@@ -19,7 +16,7 @@ namespace Section15Interpreter
                 IElement element = Parse(tokens);
 
                 return element.Value;
-            } 
+            }
             catch (Exception)
             {
                 return 0;
@@ -35,7 +32,7 @@ namespace Section15Interpreter
                 Token token = tokens[i];
 
                 ParsedIElement parsedElement = CreateElement(token, i, retElement, tokens);
-               
+
                 retElement = parsedElement.element;
 
                 if (parsedElement.hasIndexChanged) i = parsedElement.newIndex;
@@ -90,14 +87,14 @@ namespace Section15Interpreter
             addOperation.Right = rightElement.element;
 
 
-            return new ParsedIElement(addOperation, j);   
+            return new ParsedIElement(addOperation, j);
         }
 
         private ParsedIElement CreateIntegerElementFromVariable(string value)
         {
             char character = char.Parse(value);
-           
-           if (!Variables.ContainsKey(character)) throw new Exception("Variable isn't defined");
+
+            if (!Variables.ContainsKey(character)) throw new Exception("Variable isn't defined");
 
             return new ParsedIElement(new ParsedInteger(Variables[character].ToString()));
         }
@@ -117,13 +114,13 @@ namespace Section15Interpreter
             }
 
             return tokens;
-        } 
+        }
 
         private Lexed LexElement(int i, string expression)
         {
             char character = expression[i];
 
-            if(character == '+')
+            if (character == '+')
             {
                 return new Lexed(i, LexType.Plus, "+");
             }
@@ -138,8 +135,8 @@ namespace Section15Interpreter
 
             return GetVariable(i, expression);
         }
-        
-        private Lexed GetNumber(int i, string expression) 
+
+        private Lexed GetNumber(int i, string expression)
         {
             List<char> characters = new List<char>();
             characters.Add(expression[i]);
@@ -188,7 +185,7 @@ namespace Section15Interpreter
     public class Lexed
     {
         public bool hasIndexChanged;
-        
+
         public int NewIndex { get; set; }
 
         public LexType Type { get; set; }
@@ -205,8 +202,8 @@ namespace Section15Interpreter
 
     public class Token
     {
-       public LexType type;
-       public string value;
+        public LexType type;
+        public string value;
         public Token(LexType type, string value)
         {
             this.type = type;

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Section16Iterator
 {
@@ -34,7 +30,7 @@ namespace Section16Iterator
                     yield return node.Value;
             }
         }
-    
+
         private IEnumerable<Node<T>> TraverseInPreOrder(Node<T> current)
         {
             yield return current;
@@ -44,7 +40,7 @@ namespace Section16Iterator
                 foreach (var left in TraverseInPreOrder(current.Left))
                     yield return left;
             }
-            
+
             if (current.Right != null)
             {
                 foreach (var right in TraverseInPreOrder(current.Right))

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Section13ChainOfResponsibility
 {
@@ -12,14 +9,14 @@ namespace Section13ChainOfResponsibility
         protected int baseAttack;
         protected int baseDefense;
 
-        public int Attack 
+        public int Attack
         {
-            get 
+            get
             {
                 return CalculateAttack();
             }
 
-            set 
+            set
             {
                 baseAttack = value;
             }
@@ -36,7 +33,7 @@ namespace Section13ChainOfResponsibility
                 baseDefense = value;
             }
         }
-       
+
         protected virtual int CalculateAttack()
         {
             return 0;
@@ -65,7 +62,7 @@ namespace Section13ChainOfResponsibility
     public class Goblin : Creature
     {
         protected Game game;
-        public Goblin(Game game) 
+        public Goblin(Game game)
         {
             this.name = "Goblin";
             this.game = game;
@@ -77,10 +74,10 @@ namespace Section13ChainOfResponsibility
         {
             int attack = this.baseAttack;
 
-            foreach(Creature creature in this.game.Creatures)
-            {   
+            foreach (Creature creature in this.game.Creatures)
+            {
                 if (Object.ReferenceEquals(creature, this)) continue;
-                
+
                 attack += creature.GetAttackBonus();
             }
 
@@ -92,7 +89,7 @@ namespace Section13ChainOfResponsibility
             int defense = this.baseDefense;
 
             foreach (Creature creature in this.game.Creatures)
-            { 
+            {
                 if (Object.ReferenceEquals(creature, this)) continue;
 
                 defense += creature.GetDefenseBonus();

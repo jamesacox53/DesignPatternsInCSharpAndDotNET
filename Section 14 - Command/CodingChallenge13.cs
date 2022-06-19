@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Section14Command
 {
@@ -17,7 +13,7 @@ namespace Section14Command
             Command command1 = new Command();
             command1.Amount = 100;
             command1.TheAction = Command.Action.Deposit;
-            
+
             account.Process(command1);
 
             Console.WriteLine(account.Balance);
@@ -32,6 +28,6 @@ namespace Section14Command
             Console.ReadKey();
         }
 
-        
+
     }
 }

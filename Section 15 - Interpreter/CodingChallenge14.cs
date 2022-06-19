@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Section15Interpreter
 {
@@ -33,7 +29,7 @@ namespace Section15Interpreter
 
 
             ep.Variables.Add('y', 3);
-            
+
             // 5
             Console.WriteLine(ep.Calculate("10-2-y"));
 

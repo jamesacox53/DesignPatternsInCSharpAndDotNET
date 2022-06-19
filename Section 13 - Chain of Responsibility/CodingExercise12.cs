@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Section13ChainOfResponsibility
 {
@@ -20,7 +16,7 @@ namespace Section13ChainOfResponsibility
         static void Test1()
         {
             Game game = new Game();
-            
+
             Goblin goblin = new Goblin(game);
             game.Creatures.Add(goblin);
 
@@ -31,7 +27,7 @@ namespace Section13ChainOfResponsibility
         static void Test2()
         {
             Game game = new Game();
-            
+
             Goblin goblin1 = new Goblin(game);
             game.Creatures.Add(goblin1);
 

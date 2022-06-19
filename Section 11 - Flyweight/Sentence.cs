@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Section11Flyweight
 {
@@ -10,7 +6,7 @@ namespace Section11Flyweight
     {
         private string[] words;
         private Dictionary<int, WordToken> wordTokens = new Dictionary<int, WordToken>();
-        
+
         public Sentence(string plainText)
         {
             this.words = plainText.Split(' ');
@@ -20,7 +16,7 @@ namespace Section11Flyweight
         {
             get
             {
-                if (wordTokens.ContainsKey(index)) 
+                if (wordTokens.ContainsKey(index))
                 {
                     return wordTokens[index];
                 }
@@ -37,7 +33,7 @@ namespace Section11Flyweight
         {
             List<string> returnSentence = new List<string>();
 
-            for(int i = 0; i < words.Length; i++) 
+            for (int i = 0; i < words.Length; i++)
             {
                 string word = words[i];
 

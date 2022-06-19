@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Section 15 - Interpreter")]
+[assembly: AssemblyTitle("Section 18 - Memento")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP")]
-[assembly: AssemblyProduct("Section 15 - Interpreter")]
+[assembly: AssemblyProduct("Section 18 - Memento")]
 [assembly: AssemblyCopyright("Copyright © HP 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("17bfca6e-51df-45b3-9849-9628558523a1")]
+[assembly: Guid("9d39fb0d-c7c4-4ad1-9024-6bd0055afd7f")]
 
 // Version information for an assembly consists of the following four values:
 //
